@@ -2,6 +2,8 @@
 
 A Gleam project exploring building remote shells for your services.
 
+**⚠️ very much prototyping and evaluating if this even makes sense ⚠️**
+
 The idea is to have an extremely stripped down shell (where library users are
 in complete control of what it does), building up from zero instead of trying
 to lock down something bigger like the default Erlang shell.
@@ -26,7 +28,7 @@ You could install the `recon` Erlang library and expose a smaller API:
 -export([
     scheduler_usage/1,
     longest_message_queues/1
-])
+]).
 
 scheduler_usage(LongerWindow) ->
     Milliseconds = case LongerWindow of
