@@ -1,0 +1,14 @@
+name = "kjell"
+version = "0.1.0"
+description = "A remote command shell library for Gleam"
+
+licences = ["Apache-2.0"]
+repository = { type = "github", user = "fabjan", repo = "kjell" }
+
+[dependencies]
+gleam_stdlib = "~> 0.26"
+outil = "~> 0.3"
+gleam_erlang = "~> 0.18"
+
+[dev-dependencies]
+gleeunit = "~> 0.10"
