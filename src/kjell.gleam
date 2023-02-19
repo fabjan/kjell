@@ -211,17 +211,16 @@ pub fn main() {
   let env = new_env()
   try env = add_command(env, "echo", "echo one string", echo)
 
-  repl(env)
+  repl("kjell> ", env)
 }
 
 // this is Erlang only for now
-fn repl(env: Environment) {
-  let prompt = "kjell> "
+pub fn repl(prompt: String, env: Environment) {
   case erlang.get_line(prompt) {
     Error(_) -> Error("Failed to read line")
     Ok(commandline) -> {
       io.println(eval(commandline, env))
-      repl(env)
+      repl(prompt, env)
     }
   }
 }
