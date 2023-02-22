@@ -4,6 +4,8 @@ A Gleam project exploring building remote shells for your services.
 
 **⚠️ very much prototyping and evaluating if this even makes sense ⚠️**
 
+**I don't think this was a great idea, working on https://github.com/fabjan/myrlang instead.**
+
 The idea is to have an extremely stripped down shell (where library users are
 in complete control of what it does), building up from zero instead of trying
 to lock down something bigger like the default Erlang shell.
